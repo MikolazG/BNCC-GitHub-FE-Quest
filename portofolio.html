@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="portfolio.css">
+    <title>Portfolio - Mikolas</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                Mikolas 
+            </div>
+            <div class="links">
+                <div class="link"><a href="home.html">Home</a></div>
+                <div class="link"><a href="aboutme.html">About Me</a></div>
+                <div class="link"><a href="portofolio.html">Portfolio</a></div>
+                <div class="link"><a href="contact.html">Contact</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="home.html">Home</a>
+                <a href="aboutme.html">About Me</a>
+                <a href="portofolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="portfolio-container">
+        <h2 class="portfolio-header">My Portfolio</h2>
+        
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="Assets/PORTO1.png" alt="Project 1" class="portfolio-image">
+                <div class="portfolio-content">
+                    <h3 class="portfolio-title">CrypCell</h3>
+                    <p class="portfolio-description">CrypCell: Next-Gen DeFi Mobile Design for Seamless Crypto Transactions.</p>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="Assets/PORTO2.png" alt="Project 2" class="portfolio-image">
+                <div class="portfolio-content">
+                    <h3 class="portfolio-title">Food-Hub</h3>
+                    <p class="portfolio-description">FoodHub is an online food ordering platform that connects customers with local restaurants and vendors. The project is still in progress. [TECH STACK : React, C#, Firebase]</p>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="Assets/PORTO3.png" alt="Project 3" class="portfolio-image">
+                <div class="portfolio-content">
+                    <h3 class="portfolio-title">Willify</h3>
+                    <p class="portfolio-description">Willify is a web-based music platform built using HTML, CSS, and JavaScript. It allows users to explore, stream, and manage their favorite music directly from their browser.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

@@ -1,0 +1,107 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <title>Contact - Mikolas</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                Mikolas 
+            </div>
+            <div class="links">
+                <div class="link"><a href="home.html">Home</a></div>
+                <div class="link"><a href="aboutme.html">About Me</a></div>
+                <div class="link"><a href="portofolio.html">Portfolio</a></div>
+                <div class="link"><a href="contact.html">Contact</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="home.html">Home</a>
+                <a href="aboutme.html">About Me</a>
+                <a href="portofolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="contact-container">
+        <div class="contact-header">
+            <h2>Get in Touch</h2>
+            <p>Feel free to reach out to me for collaborations</p>
+        </div>
+
+        <form class="contact-form" action="#" method="POST">
+            <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input 
+                    type="text" 
+                    id="fullname" 
+                    name="fullname" 
+                    placeholder="Enter your full name"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    placeholder="Enter your email address"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="linkedin">LinkedIn Profile</label>
+                <input 
+                    type="url" 
+                    id="linkedin" 
+                    name="linkedin" 
+                    placeholder="Enter your LinkedIn profile URL"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea 
+                    id="message" 
+                    name="message" 
+                    placeholder="Write your message here..."
+                    required
+                ></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+
+        <div class="social-contact">
+            <h3>Another platforms that i use</h3>
+            <div class="social-icons">
+                <a href="https://github.com/Dry3yes" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/mikolas-p-gultom-85b039310/" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.instagram.com/mikogltm_/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" target="_blank">
+                    <i class="fab fa-discord"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
